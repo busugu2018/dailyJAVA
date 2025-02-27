@@ -32,6 +32,23 @@ public class SecondClass {
 			System.out.println("We love our Yellow people.");
 		}
 		
+		//Not operator
+		boolean isGreen = true;
+		if (isGreen) {
+			System.out.println("The applicant is Green");
+			System.out.println("We love our Green people.");
+		}
+		
+		boolean isMatte = true;
+		if (!isMatte) {
+			System.out.println("The applicant is Matte");
+			System.out.println("We love our Green people.");
+		}
+		
+		boolean isCar = false;
+		if (!isCar) {
+			System.out.println("This is not supposed to happen.");
+		}
 		
 		
 		//Int and equals
@@ -45,15 +62,41 @@ public class SecondClass {
 			System.out.println("You got a mid Score!");
 		}
 
-		int midScore1 = 79;
-		if (midScore1 != 80) {
+		int midScore1 = 90;
+		if (midScore1 != 89) {
 			System.out.println("You got a different score!");
 		}	
 		
-		int lowScore = 79;
+		int lowScore = 70;
 		if (lowScore < 80) {
 			System.out.println("You got a C!");
 		}		
+		
+		
+		//AND OR
+		
+		if(topScore > midScore) {
+			System.out.println("You pass the class");
+		}
+		
+		if((topScore > midScore) && (lowScore < midScore)) {
+			System.out.println("You pass the class");
+		}
+
+		if((topScore > midScore) || (lowScore < midScore)) {
+			System.out.println("You pass the class");
+		}
+		
+		
+		//Ternary Operator
+		String carMake = "Peugeot";
+		boolean isDomestic = carMake == "Peugeot" ? false : true;
+		
+		if (isDomestic) {
+			System.out.println("This car is Domestic.");
+		}
+		
+		
 		
 		//Else
 		boolean isWhite = false; //Racist code
