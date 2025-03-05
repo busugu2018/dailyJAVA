@@ -86,21 +86,21 @@ public class main {
 	}
 	
 	
-	public static String getQuarter(String month) {
-		
-		String month = "Apr";
-		System.out.println(month + "is in the " + getQuarter(month) + " quarter.");
-		return switch (month) {
-			case "Jan", "Feb", "Mar" -> "1st";
-			case "Apr", "May", "Jun" -> "2nd";
-			case "Jul", "Aug", "Sep" -> "3rd";
-			case "Oct", "Nov", "Dec" -> "4th";
-			default -> {
-				String badResponse = month + " is bad.";
-				yield badResponse;
-			}
-		}		
-	}
+//	public static String getQuarter(String month) {
+//		
+//		String month = "Apr";
+//		System.out.println(month + "is in the " + getQuarter(month) + " quarter.");
+//		return switch (month) {
+//			case "Jan", "Feb", "Mar" -> "1st";
+//			case "Apr", "May", "Jun" -> "2nd";
+//			case "Jul", "Aug", "Sep" -> "3rd";
+//			case "Oct", "Nov", "Dec" -> "4th";
+//			default -> {
+//				String badResponse = month + " is bad.";
+//				yield badResponse;
+//			}
+//		}		
+//	}
 
 }
 
